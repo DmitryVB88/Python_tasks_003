@@ -1,13 +1,26 @@
-def summ(num):
-    sum = 0
-    p = 0
-    while num != 0:
-        p = num % 10
-        sum = sum + p
-        num = num // 10
-        return sum
+#  1. Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
-print(summ(123))
-print(sum)
+x = input('Введите вещественное число X = ')
+sum = 0
+for simb in x:
+    if simb.isdigit():
+        sum += int(simb)
 
-# print(f'Сумма числа' ,num, '=' ,summ(sum))
+print(f'Сумма цифр числа {x} равна {sum}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
